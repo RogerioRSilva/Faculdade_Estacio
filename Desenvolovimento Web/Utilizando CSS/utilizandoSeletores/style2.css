@@ -1,0 +1,44 @@
+p#texto_apresentacao{
+    font-size: 16px;
+}
+
+p.texto_descricao{
+    font-size: 12px;
+}
+
+.texto_vermelho{
+    color: rgb(38, 0, 255);
+}
+
+/*  HERANÇA  */
+
+/*Tudo que estver dentro da div herda seu estilo definido*/
+div{
+    color: blue;
+}
+
+
+/*  ESPECIFICIDADE  */
+
+div p{
+    color: red;
+}
+
+/*
+Precedencia dos estilos CSS
+
+1º - Em linha
+2º - Interno
+3º - Externo
+
+*/
+
+
+/*
+PRECEDENCIA DOS SELETORES
+
+1º - Identificadores
+2º - Classes
+3º - TAGS (Elementos)
+
+*/

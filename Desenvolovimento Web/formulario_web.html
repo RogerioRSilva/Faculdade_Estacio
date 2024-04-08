@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário WEB</title>
+</head>
+<body>
+    <h1>Formulário WEB</h1>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="nome" autofocus>Nome:</label>
+            <input type="text" minlength="3" id="nome">
+
+            <label for="data_nascimento">Data de Nascimento: </label>
+            <input type="date" name="" id="data_nascimento">
+
+            <label for="cpf">CPF: </label>
+            <input type="cpf" minlength="11" id="cpf"><br>
+
+            <!--Para poder refletir a seleção do radio tem que ter o mesmo name para todos-->
+            <label for="sexo">Sexo:</label><br>
+            <input type="radio" id="fem" name="tipo_sexo" value="Feminino">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="mas" name="tipo_sexo" value="Masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="outros" name="tipo_sexo" value="Outros">
+            <label for="outros">Outros</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="tipo_endereco">Tipo: </label>
+            <select name="" id="tipo_endereco">
+                <option value="">Selecione</option>
+                <option value="">Rua</option>
+                <option value="">Estrada</option>
+                <option value="">Rodovia</option>
+                <option value="">Outros</option>
+            </select>
+
+            <label for="logradouro_endereco">Logradouro: </label>
+            <input type="text" id="logradouro_endereco">
+
+            <label for="numero_endereco">Número: </label>
+            <input type="text" id="numero_endereco">
+
+            <label for="complemento_endereco">Complemento: </label>
+            <input type="text" id="complemento_endereco">
+        </fieldset>
+
+        <fieldset>
+            <legend>Fale Conosco</legend>
+
+            <label for="msg">Mensagem:</label><br>
+            <textarea type="text" id="msg" cols="90" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar mensagem</button>
+            <button type="reset">Limpar o Formulário</button>
+        </fieldset>
+
+    </form>
+
+    <hr>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>LOGIN</legend>
+            <label for="username">Username: </label><br>
+            <input type="text" id="username" name="username"><br>
+
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+
+    <form action="/action_page.php" method="get">
+        <fieldset>
+            <legend>Validação Dados</legend>
+
+            <label for="email">Digite seu email:</label>
+            <input type="email" id="email" name="email" required="true"><br>
+
+            <label for="qtadade">Quantidade: </label>
+            <input type="number" id="qtadade" min="0" max="100" step="10" value="30"><br>
+            <input type="submit">
+
+            <label for="telefone">Digite seu celular:</label>
+            <input type="tel" id="cel" name="cel" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required="true">
+        </fieldset>
+    </form>
+</body>
+</html>

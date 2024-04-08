@@ -1,0 +1,48 @@
+/*Exemplo de CSS*/
+
+h1{
+    color: blue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    background-color: bisque;
+}
+
+h1:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*   SELETORES   */
+
+/*TAGS*/
+body{
+
+}
+
+/*Classes*/
+.nomedaclassse{
+
+}
+
+/*Identificadores*/
+#nomedoID{
+
+}
+
+/*Múltiplos*/
+h1, h2{
+
+}
+
+/*Hierarquico*/
+h1 .vermelho{
+
+}
+
+/*Pseudo-elementos*/
+a:hover{
+
+}
+

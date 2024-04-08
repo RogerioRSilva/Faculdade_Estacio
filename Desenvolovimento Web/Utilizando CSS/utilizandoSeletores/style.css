@@ -1,0 +1,18 @@
+#texto_apresentacao{
+    font-size: 16px;
+}
+
+.texto_descricao{
+    font-size: 12px;
+}
+
+.texto_vermelho{
+    color: red;
+}
+
+/*Deve-se sempre utilizar o ID para 
+identificar um unico elemento e que tenha um nome unico.
+
+a classe pode ser utilizada para identificar multiplos elementos
+de preferencia do mesmo tipo. 
+*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th{
+            border: 1px solid grey;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            /*Utilizado para dar o efeito zebrado na tabela*/
+            background-color: #DDDDDD;
+        }
+        tfoot>tr{
+            background-color: rgb(231, 245, 101);
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabelas em HTML</h1>
+    <hr>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Empresa</th><th>Contato</th><th>Pais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td>            
+            </tr>
+            <tr>
+                <td>Centro Comercial Moctezuma</td><td>Francisco Chang</td><td>México</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td><td>Roland Mendel</td><td>Austria</td>
+            </tr>
+            <tr>
+                <td>Rogério Silva</td><td>MIchele Cintra</td><td>Brasil</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">Atendemos 24hrs</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
