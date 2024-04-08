@@ -1,4 +1,4 @@
-.pdf
-.jpg
-.mp4
-.txt
+*.pdf
+*.jpg
+*.mp4
+*.txt
