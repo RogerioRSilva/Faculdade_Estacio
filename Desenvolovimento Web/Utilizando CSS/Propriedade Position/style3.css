@@ -1,0 +1,13 @@
+#fx_elemento_01{
+    width: 50%;
+    height: 200px;
+    background-color: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid ;
+}

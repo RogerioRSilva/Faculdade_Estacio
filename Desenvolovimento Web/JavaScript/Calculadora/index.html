@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/JavaScript/Calculadora/css/style.css">
+    <script src="/JavaScript/Calculadora/css/js/script.js"></script>
+</head>
+<body>
+
+    <div id="calculadora">
+        <div id="tela">0</div>
+        <div id="botoes">
+            <div class="botoes_numericos">
+                <button id="num1" onclick="getNumero1(this.value)" value="1">1</button>
+                <button id="num2" onclick="getNumero1(this.value)" value="2">2</button>
+                <button id="num3" onclick="getNumero1(this.value)" value="3">3</button>
+                <button id="num4" onclick="getNumero1(this.value)" value="4">4</button>
+                <button id="num5" onclick="getNumero1(this.value)" value="5">5</button>
+                <button id="num6">6</button>
+                <button id="num7">7</button>
+                <button id="num8">8</button>
+                <button id="num9">9</button>
+                <button id="num0">0</button>
+                <button id="ponto"><h1 style="line-height: 0px;">.</h1></button>
+                <button id="igual">=</button>
+            </div>
+            <div class="botoes_aritimeticos">
+                <button id="divisao" onclick="dividir()">/</button>
+                <button id="multiplica" onclick="multiplicar()">X</button>
+                <button id="subtrai" onclick="subtrair()">-</button>
+                <button id="soma" onclick="somar()">+</button>                
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

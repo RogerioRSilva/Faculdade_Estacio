@@ -1,0 +1,25 @@
+#ab_elemento_01{
+    width: 50%;
+    height: 200px;
+    background-color: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#ab_elemento_02{
+    width: 50%;
+    height: 200px;
+    background-color: #d8db1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
