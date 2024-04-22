@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em JS</title>
+</head>
+<body>
+
+    <script>
+        var frutas = ['Laranja', 'Uva', 'Limão'];
+        document.write('Lista de Frutas: ' + frutas)
+        document.write('<hr> <br>')
+
+        var alunos = [ ];  //array vazio
+        var alunos = ['Alex', 'Anna', 'João']; // array de strings
+        var notas = [10.0, 9.5, 9.5]; //array de números decimais
+        var mistura = ['Um', 2, 3, 'Quatro']; //array de diversos tipos de dados
+        document.write('Lista de Alunos: '+ alunos)
+
+        // Outrta forma de criar a lista usando um construtor Array
+        var alunos = new Array();
+        var alunos = new Array('Alex', 'Anna', 'João');
+        
+        document.write('<br>Exibindo um aluno da lista: '+ alunos[1])
+        //alert(alunos[0]); //exibirá “Alex” na caixa de diálogo
+
+        // Insere o item no final da lista 
+        alunos.push('Helena');
+        document.write('<br> Inserindo mais um aluno Helena: ' + alunos)
+
+        alunos.push('Marcelo', 'Maria');
+        document.write('<br> Inserindo 2 itens direto na lista Marcelo e Maria: ' + alunos)
+
+        document.write('<br> Quantidade de itens na lista: ' + alunos.length)
+        
+        alunos.splice(3,0,'Heloisa');
+        //alert(alunos); //imprimirá 'Alex', 'Anna', 'João', 'Helena'
+        document.write('<br> Inserindo um item com SLICE na posição 3, sem remover os outros: ' + alunos)
+
+
+        alunos.splice(1,1,'Juliana');
+        //alert(alunos); //imprimirá 'Alex, 'Helena', 'João'
+        document.write('<br> Atualizando a posição 1 da lista: ' + alunos)
+
+        delete alunos[4]
+        document.write('<br>Removendo o nome da Helena na posição 4: ' + alunos + ' Lista comtem ' + alunos.length + ' itens')
+        
+        alunos.splice(4, 1)
+        document.write('<br>Removendo o nome da Helena na posição 4: ' + alunos + ' Lista comtem ' + alunos.length + ' itens')
+        
+        
+        alunos.pop();
+        document.write('<br>Removendo o ultimo elemento da lista: ' + alunos)
+
+
+        alunos.shift();
+        document.write('<br>Removendo o primeiro elemento da lista: ' + alunos)
+
+        document.write('<hr>')
+
+    </script>
+    
+</body>
+</html>

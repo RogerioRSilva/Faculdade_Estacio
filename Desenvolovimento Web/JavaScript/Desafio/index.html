@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <!-- Faça um programa em JavaScript que:
+
+    Solicite ao usuário que insira dois números inteiros positivos;
+
+    Utilize um vetor para armazenar esses dois números;
+
+    Verifique se os números inseridos são inteiros positivos. Caso contrário, solicite ao usuário para inseri-los novamente;
+
+    Divida os dois números inteiros positivos;
+
+    Imprima na tela o resultado da divisão. -->
+
+    <script>
+        numero1 = parseInt(prompt('Digite o primeiro numero:'));
+        numero2 = parseInt(prompt('Digite o segundo numero:'));
+        vetor = []
+
+        if(numero1 > 0 && numero2 > 0){
+            vetor.push(numero1, numero2);
+            alert(dividir(vetor[0], vetor[1]));
+        }            
+        else{
+            alert('Numero não é positivo!');
+        }    
+            
+        console.log('Lista de Numeros: ' + vetor)
+
+        function dividir(num1, num2){
+            return num1 / num2
+        }
+    </script>
+
+
+</body>
+</html>
